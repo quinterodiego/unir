@@ -26,14 +26,14 @@ const Hero = () => {
           </div>
 
           {/* Imagen del hero */}
-          <div className="flex-1 flex justify-center items-center w-full animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <div className="relative w-full max-w-md md:max-w-lg lg:max-w-xl">
-              <div className="aspect-[4/3] md:aspect-square bg-gradient-to-br from-unirPrimary/20 to-unirBg rounded-2xl md:rounded-3xl p-4 md:p-6 lg:p-8 flex items-center justify-center border border-white/5">
-                <div className="w-full h-full bg-unirPrimary/10 rounded-xl md:rounded-2xl flex items-center justify-center overflow-hidden">
+          <div className="flex-1 w-full flex justify-center items-center animate-fade-in-up order-first md:order-last" style={{ animationDelay: '0.2s' }}>
+            <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+              <div className="w-full bg-gradient-to-br from-unirPrimary/20 to-unirBg rounded-2xl md:rounded-3xl p-3 sm:p-4 md:p-6 lg:p-8 border border-white/5">
+                <div className="w-full bg-unirPrimary/10 rounded-xl md:rounded-2xl overflow-hidden">
                   <img 
                     src={heroImage} 
                     alt="UNIR Hero" 
-                    className="w-full h-full object-contain md:object-cover rounded-xl md:rounded-2xl" 
+                    className="w-full h-auto object-contain rounded-xl md:rounded-2xl" 
                   />
                 </div>
               </div>
